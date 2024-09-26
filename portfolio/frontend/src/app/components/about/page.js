@@ -11,7 +11,7 @@ import expresslogo from '/public/images/expresslogo.png'
 import html from '/public/images/Html5.png'
 import css from '/public/images/Css.png'
 import nodejs from '/public/images/nodejslogo.png'
-import mongodb from '/public/images/mongoDB.png'
+import mongodb from '/public/images/MongoDB.png'
 import { motion, motionValue } from 'framer-motion';
 import { styled } from "@mui/material/styles";
 import { Chip, Container, LinearProgress, makeStyles } from '@mui/material';
