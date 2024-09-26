@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react'
 import Container from '@mui/material/Container'
 import { Button, Paper } from '@mui/material'
