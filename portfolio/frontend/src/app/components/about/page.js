@@ -98,7 +98,7 @@ export default function About() {
               <motion.div   whileInView={{ x: [100, 0], transition: { duration:.5} }} className=' text-center mt-5 px-0'>
                 <h1 className='text-start text-2xl md:text-3xl lg:text-center  lg:text-4xl text-blue-600' >Full Stack Developer</h1>
                 <p className='text-md text-wrap inline-block text-center l mt-2  lg:text-lg' >
-                  <span className='text-2xl '> Hi</span> I'am "Ganesh Bochare" a passionate Full Stack developer specializing in creating drynamic and responsive web applications.
+                  <span className='text-2xl '> Hi</span> I&apos;sam "Ganesh Bochare" a passionate Full Stack developer specializing in creating drynamic and responsive web applications.
                   With a background in computer science and deep love for coding,I have honed my skills in React,
                   Redux,JavaScript,and modern web technologys.
                 </p>
