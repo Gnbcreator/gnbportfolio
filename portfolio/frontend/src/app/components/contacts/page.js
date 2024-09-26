@@ -35,7 +35,7 @@ export default function Contacts() {
             <div className=' flex justify-center  my-1'>
                 <Paper elevation={0} className='mt-10 rounded-lg p-10 w-[380px] h-auto  md:w-[600px] md:h-[auto] lg:grid lg:grid-cols-2 lg:w-screen bg-transparent  text-white ' >
                     <div className=''>
-                        <h1 variant="h3" className=' text-white   text-3xl font-semibold md:text-4xl'>Let's Work Togather</h1>
+                        <h1 variant="h3" className=' text-white   text-3xl font-semibold md:text-4xl'>It&apos;s Work Togather</h1>
 
                         <h1 className='text-sm mt-16 text-white  lg:text-lg'><CallRounded /> <span className=''>+91 7350491070</span></h1>
                         <h1 className='text-sm mt-7  text-white  lg:text-lg'><MailRounded /> <span className=''>ganeshbochare1070@gmail.com</span></h1>
