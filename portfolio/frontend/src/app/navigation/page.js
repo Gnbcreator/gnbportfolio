@@ -12,7 +12,6 @@ import { Menu, Paper, } from '@mui/material'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { CloseRounded, MenuOpenRounded, MenuRounded, Instagram, GitHub, LinkedIn } from '@mui/icons-material'
 import { useEffect, useState } from 'react'
-// import { Transition } from '@headlessui/react'
 import { MoonIcon, SunIcon } from '@heroicons/react/24/outline'
 import { dark } from '@mui/material/styles/createPalette'
 
@@ -54,23 +53,13 @@ export default function Navigation() {
                 <div className=" lg:fixed right-0 transition-all  lg:mt-[2px] bg-transparent lg:grid grid-flow-col  lg:place-content-center hidden  ">
                     {
                         navlinks.map((items) => (
-                            <Button className=' rounded-3xl hover:border-2 px-2 py-1 hover:border-pink-100  hover:border-opacity-50  hover:rounded-2xl'>
+                            <Button  key={items.name} className=' rounded-3xl hover:border-2 px-2 py-1 hover:border-pink-100  hover:border-opacity-50  hover:rounded-2xl'>
                                 <Link key={items.name} className="  text-justify text-md mx-9 lg:text-[15px] text-white capitalize font-light hover:text-blue-500 hover:animate-in  " offset={-50} smooth={10} to={items.src}>{items.name}</Link>
                             </Button>
                         ))
 
                     }
                 </div>
-                {/* <div className='px-10'>
-                    <button className=' mt-2 absolute '  >
-                        {
-                            theme != true ? <MoonIcon onClick={() => setTheme(true)} className='w-7 h-7 hover:text-blue-700 transition-all ' />
-                                :
-                                <SunIcon onClick={() => setTheme(false)} className=' w-8 h-8 hover:text-blue-700 transition-all ' />
-                        }
-                    </button>
-
-                </div> */}
                 <div className='-mt-2 inline-block  lg:hidden '>
                     <Button className='rounded-full  w-1 h-7 mt-3' onClick={() => setMobileOpen(true)}>
                         {
