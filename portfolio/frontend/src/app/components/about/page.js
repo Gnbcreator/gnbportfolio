@@ -129,7 +129,7 @@ export default function About() {
                 logoList.map((items,index) => (
                   <div>
                     <motion.div whileInView={{y:[100,0],transition:{duration:1}}} className='flex'>
-                      <Image className=' w-auto h-10 md:w-auto md:h-16 p-1' src={items.src} alt='image' />
+                      <Image key={items.index}  className=' w-auto h-10 md:w-auto md:h-16 p-1' src={items.src} alt='image' />
                       <div key={items.index} className=' w-full my-auto  ml-2 md:w-full lg:w-[500px] lg:mt-6'><BorderdLinearProssessbar  variant='determinate' value={items.percent} /><motion.span  className=' text-lg w-auto'>{items.percent}%</motion.span></div>
                     </motion.div>
                   </div>
