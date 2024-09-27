@@ -105,7 +105,7 @@ export default function About() {
                 <div className='mt-14 lg:mt-5 grid lg:grid-cols-2 gap-4 lg:gap-8'>
                   {
                     personalInfo.map((items,index) => (
-                      <Chip key={items.index} color='info' size='medium' className='text-sm w-auto text-white lg:text-md' avatar={items.avatar} label={items.info} variant="outlined" />
+                      <Chip key={items.avtar} color='info' size='medium' className='text-sm w-auto text-white lg:text-md' avatar={items.avatar} label={items.info} variant="outlined" />
                     ))
                   }
 
@@ -127,8 +127,8 @@ export default function About() {
             <div className='grid mt-5 lg:grid-cols-2 gap-16 lg:gap-16 px-2  py-5 md:gap-5 lg:place-items-center'>
               {
                 logoList.map((items,index) => (
-                  <div>
-                    <motion.div whileInView={{y:[100,0],transition:{duration:1}}} className='flex'>
+                  <div key={items.index} >
+                    <motion.div key={items.index}  whileInView={{y:[100,0],transition:{duration:1}}} className='flex'>
                       <Image key={items.index}  className=' w-auto h-10 md:w-auto md:h-16 p-1' src={items.src} alt='image' />
                       <div key={items.index} className=' w-full my-auto  ml-2 md:w-full lg:w-[500px] lg:mt-6'><BorderdLinearProssessbar  variant='determinate' value={items.percent} /><motion.span  className=' text-lg w-auto'>{items.percent}%</motion.span></div>
                     </motion.div>
