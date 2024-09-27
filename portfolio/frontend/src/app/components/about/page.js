@@ -104,8 +104,8 @@ export default function About() {
                 </p>
                 <div className='mt-14 lg:mt-5 grid lg:grid-cols-2 gap-4 lg:gap-8'>
                   {
-                    personalInfo.map((items) => (
-                      <Chip key={items.info} color='info' size='medium' className='text-sm w-auto text-white lg:text-md' avatar={items.avatar} label={items.info} variant="outlined" />
+                    personalInfo.map((items,index) => (
+                      <Chip key={items.index} color='info' size='medium' className='text-sm w-auto text-white lg:text-md' avatar={items.avatar} label={items.info} variant="outlined" />
                     ))
                   }
 
